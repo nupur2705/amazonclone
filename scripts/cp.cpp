@@ -51,30 +51,20 @@ if(s*s==sum){
 }
 }*/
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll long long int 
 using namespace std;
 int main(){
-    int t;
+    ll t;
     cin>>t;
     while(t--){
         ll n;
         cin>>n;
         string s;
-        cin>>s;
-        string a="";a+=s[0];
+        string a="";ll k=0;
+        for(ll i=0;i<n;i++){
+            
 
-        for(int i=1;i<s.size();i++){
-            if(s[i]=='a'||s[i]=='b'){
-                a+=s[i];
-                a+='.';
-            }else if(s[i]=='b'||s[i]=='c'||s[i]=='e'){
-                if(s[i+1]=='a'||s[i+1]=='e'){
-                    a+=s[i];
-                    a+='.';
-                }
-            }
-        }cout<<a<<endl;
-
+        }
+        
     }
-
 }
