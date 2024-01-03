@@ -1,70 +1,29 @@
-/*#include<bits/stdc++.h>
+#include<bits/stdc++.h>
+#define ll long long 
 using namespace std;
 int main(){
     int t;
     cin>>t;
     while(t--){
-    int a,b,c;
-    cin>>a>>b>>c;
-    if(a!=b&&a!=c)cout<<a<<endl;
-    else if(b!=a&&b!=c)cout<<b<<endl;
-    else cout<<c<<endl;
-}
-}
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int t;
-    cin>>t;
-    while(t--){ char a[3][3];
-      for(int i=0;i<3;i++){
-       for(int j=0;j<3;j++){
-        cin>>a[i][j];
-      } }for(int i =0;i<3;i++){
-        for(int j=0;j<3;j++){
-           if(a[i][j]=='?'){
-            if(i==0){
-                if((a[1][j]=='B'||a[1][j]=='C')&&)
+        ll n;cin>>n;
+        string s;cin>>s;
+        string ans="";
+        for(int i=n-1;i>=0;i--){
+            if(s[i]=='a'||s[i]=='e'){
+                ans+=s[i];
+                ans+=s[i-1];
+                ans+='.';
+                i-=2;
+            }else{
+                ans+=s[i];
+                ans+=s[i-1];
+                ans+=s[i-2];
+                ans+='.';
+                i-=3;
+
             }
-           }
-
-#include<bits/stdc++.h>
-#define ll long long int
-using namespace std;
-int main(){
-ll t;
-cin>>t;
-while(t--){
-    ll n;
-    cin>>n;
-    ll a[n];ll sum=0; ll ans=0;
-for(int i=0;i<n;i++){
-    cin>>a[i];sum+=a[i];
-
-
-}ll s=sqrt(sum);
-if(s*s==sum){
-    cout<<"yes"<<endl;
-}else{
-    cout<<"no"<<endl;
-}
-}
-}*/
-#include<bits/stdc++.h>
-#define ll long long int 
-using namespace std;
-int main(){
-    ll t;
-    cin>>t;
-    while(t--){
-        ll n;
-        cin>>n;
-        string s;
-        string a="";ll k=0;
-        for(ll i=0;i<n;i++){
-            
-
-        }
-        
+        }for(int i=ans.size();i>=0;i++){
+            cout<<ans[i];
+        }cout<<endl;
     }
 }
